@@ -261,3 +261,27 @@ border-radius:30px;
 box-shadow:0 6px 15px rgba(0,0,0,.25);
 z-index:10;
 }
+/* Thumbnail Slider */
+
+.thumbs{
+display:flex;
+justify-content:center;
+gap:12px;
+margin-top:20px;
+flex-wrap:wrap;
+}
+
+.thumbs img{
+width:75px;
+height:75px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+border:2px solid #ddd;
+transition:.3s;
+}
+
+.thumbs img:hover{
+border-color:#e91e63;
+transform:scale(1.08);
+}
