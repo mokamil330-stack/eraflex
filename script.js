@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     galleryImgs.forEach(function (img) {
       img.addEventListener("click", function () {
-        lbImg.src = img.src.replace("w=500", "w=1200");
+        lbImg.src = img.src;
         lbImg.alt = img.alt;
         lb.classList.add("active");
       });
