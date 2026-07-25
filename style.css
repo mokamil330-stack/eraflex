@@ -165,3 +165,34 @@ max-width:300px;
 }
 
 }
+
+/* Gallery */
+
+.gallery{
+padding:60px 8%;
+text-align:center;
+}
+
+.gallery h2{
+font-size:34px;
+margin-bottom:30px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+cursor:pointer;
+transition:.3s;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
