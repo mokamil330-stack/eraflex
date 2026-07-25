@@ -249,6 +249,76 @@ Gift box is amazing.
 🛒 Order Now ₹599
 
 </a>
+
+  <!-- Order Form -->
+
+<section class="order-section" id="order">
+
+<h2>Place Your Order</h2>
+
+<form id="orderForm">
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="tel" id="mobile" placeholder="Mobile Number" maxlength="10" required>
+
+<input type="text" id="address" placeholder="Full Address" required>
+
+<div class="row">
+
+<input type="text" id="city" placeholder="City" required>
+
+<input type="text" id="state" placeholder="State" required>
+
+</div>
+
+<input type="text" id="pincode" placeholder="Pincode" maxlength="6" required>
+
+<select id="qty">
+
+<option value="1">1 Box</option>
+
+<option value="2">2 Boxes</option>
+
+<option value="3">3 Boxes</option>
+
+</select>
+
+<button type="submit" class="order-btn">
+
+🛒 Confirm COD Order
+
+</button>
+
+</form>
+
+</section>
+
+<!-- Success Popup -->
+
+<div id="popup">
+
+<div class="popup-box">
+
+<h2>🎉 Order Received</h2>
+
+<p>
+
+Thank you.
+
+Our Team will call you shortly for confirmation.
+
+</p>
+
+<button onclick="closePopup()">
+
+OK
+
+</button>
+
+</div>
+
+</div>
 <script src="script.js"></script>
 
 </body>
