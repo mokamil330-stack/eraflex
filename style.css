@@ -220,3 +220,44 @@ transition:.3s;
 transform:translateY(-3px);
 box-shadow:0 12px 25px rgba(0,0,0,.15);
 }
+/* Premium Hero Image */
+
+.hero-right{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hero-right img{
+width:100%;
+max-width:480px;
+border-radius:25px;
+background:#fff;
+padding:15px;
+border:3px solid #f5d76e;
+box-shadow:0 20px 45px rgba(0,0,0,.18);
+transition:.4s ease;
+}
+
+.hero-right img:hover{
+transform:scale(1.03) rotate(-1deg);
+box-shadow:0 30px 60px rgba(0,0,0,.25);
+}
+.image-box{
+position:relative;
+display:inline-block;
+}
+
+.sale-badge{
+position:absolute;
+top:15px;
+left:15px;
+background:#e53935;
+color:#fff;
+padding:8px 14px;
+font-size:14px;
+font-weight:700;
+border-radius:30px;
+box-shadow:0 6px 15px rgba(0,0,0,.25);
+z-index:10;
+}
