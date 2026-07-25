@@ -196,3 +196,27 @@ box-shadow:0 8px 20px rgba(0,0,0,.12);
 transform:scale(1.05);
 box-shadow:0 12px 30px rgba(0,0,0,.25);
 }
+/* Trust Badges */
+
+.trust-badges{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:25px 0;
+}
+
+.trust-badges div{
+background:#fff;
+border:1px solid #eee;
+padding:12px;
+border-radius:12px;
+font-weight:600;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.trust-badges div:hover{
+transform:translateY(-3px);
+box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
