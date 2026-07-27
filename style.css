@@ -5,14 +5,7 @@
    used as a divider/marker throughout the page.
    ========================================================= */
 
-:root {
-  --ink: #0a0a0c;
-  --ink-soft: #1c1b1f;
-  --paper: #faf8f4;
-  --paper-soft: #f1ece2;
-  --gold: #c9a136;
-  --gold-light: #e8d9a4;
-  --gold-deep: #8c6d1f;
+
   --rose: #b8455f;
 
   --font-display: "Cormorant Garamond", Georgia, serif;
