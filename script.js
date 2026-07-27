@@ -434,20 +434,62 @@ document.addEventListener("DOMContentLoaded", function () {
       submitBtn.textContent = "Placing Order...";
       submitBtn.disabled = true;
 
-      setTimeout(function () {
-        submitBtn.textContent = "✔ Order Placed Successfully!";
-        setTimeout(function () {
-          alert(
-            "Thank you " + fields.name.el.value.trim() + "! Your order for " + qty +
-            " unit(s) (Total: " + total + ") has been placed. Our team will call to confirm delivery."
-          );
-          form.reset();
-          document.getElementById("quantity").value = 1;
-          document.getElementById("totalAmount").textContent = "₹599";
-          submitBtn.textContent = originalText;
-          submitBtn.disabled = false;
-        }, 900);
-      }, 900);
+      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx7wTWeMzRzJfPwKAgAxDSS-ZGX1TwKpIgkv4GhF_guHUMBpeKBkbVRduD9y51ID1b9IQ/exec";
+
+var orderData = {
+  name: fields.name.el.value.trim(),
+  phone: fields.phone.el.value.trim(),
+  address: fields.address.el.value.trim(),
+  city: fields.city.el.value.trim(),
+  state: fields.state.el.value.trim(),
+  pincode: fields.pincode.el.value.trim(),
+  qty: qty,
+  total: total
+};
+
+fetch(WEB_APP_URL, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(orderData)
+})
+.then(function(response){
+  return response.json();
+})
+.then(function(data){
+
+  if(data.success){
+
+    submitBtn.textContent = "✔ Order Placed Successfully!";
+
+    alert(
+      "Thank you " + orderData.name +
+      "! Your order has been received successfully."
+    );
+
+    form.reset();
+    document.getElementById("quantity").value = 1;
+    document.getElementById("totalAmount").textContent = "₹599";
+
+  }else{
+
+    alert("Error : " + data.error);
+
+  }
+
+})
+.catch(function(error){
+
+  alert("Network Error\n" + error);
+
+})
+.finally(function(){
+
+  submitBtn.textContent = originalText;
+  submitBtn.disabled = false;
+
+});
     });
   })();
 
