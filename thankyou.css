@@ -176,3 +176,20 @@ flex-direction:column;
 }
 
 }
+.track-btn{
+display:block;
+width:100%;
+margin:20px 0;
+padding:15px;
+background:#2563eb;
+color:#fff;
+text-decoration:none;
+border-radius:12px;
+font-weight:600;
+text-align:center;
+transition:.3s;
+}
+
+.track-btn:hover{
+background:#1d4ed8;
+}
