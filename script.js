@@ -463,6 +463,8 @@ fetch(WEB_APP_URL, {
 
   if(data.success){
 
+     localStorage.setItem("orderId", data.orderId);
+
     submitBtn.textContent = "✔ Order Placed Successfully!";
 
    window.location.href = "thankyou.html";
