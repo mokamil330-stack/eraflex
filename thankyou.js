@@ -1,15 +1,22 @@
-window.onload = function(){
+window.onload = function () {
 
-setTimeout(function(){
+  const orderId = localStorage.getItem("orderId");
 
-document.querySelector(".checkmark").style.transform="scale(1.15)";
+  if(orderId){
+    document.getElementById("orderNumber").innerHTML =
+    "Order ID : <span style='color:#16a34a'>" + orderId + "</span>";
+  }
 
-setTimeout(function(){
+  setTimeout(function(){
 
-document.querySelector(".checkmark").style.transform="scale(1)";
+    document.querySelector(".checkmark").style.transform="scale(1.15)";
 
-},300);
+    setTimeout(function(){
 
-},500);
+      document.querySelector(".checkmark").style.transform="scale(1)";
+
+    },300);
+
+  },500);
 
 }
