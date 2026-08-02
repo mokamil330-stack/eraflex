@@ -465,14 +465,7 @@ fetch(WEB_APP_URL, {
 
     submitBtn.textContent = "✔ Order Placed Successfully!";
 
-    alert(
-      "Thank you " + orderData.name +
-      "! Your order has been received successfully."
-    );
-
-    form.reset();
-    document.getElementById("quantity").value = 1;
-    document.getElementById("totalAmount").textContent = "₹599";
+   window.location.href = "thankyou.html";
 
   }else{
 
