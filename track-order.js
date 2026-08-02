@@ -1,4 +1,4 @@
-const WEB_APP_URL = "YOUR_APPS_SCRIPT_URL_HERE";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx7wTWeMzRzJfPwKAgAxDSS-ZGX1TwKpIgkv4GhF_guHUMBpeKBkbVRduD9y51ID1b9IQ/exec";
 
 document.getElementById("trackBtn").addEventListener("click", function () {
 
