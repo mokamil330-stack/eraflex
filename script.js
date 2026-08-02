@@ -1,5 +1,5 @@
 /* =========================================================
-   ViralGotIt — 12 Pair Premium Colorful Jhumki Collection
+   Eraflex — 12 Pair Premium Colorful Jhumki Collection
    Vanilla JS: slider, zoom, countdown, live counters,
    FAQ accordion, sticky buttons, form validation, smooth scroll
    ========================================================= */
@@ -508,7 +508,7 @@ fetch(WEB_APP_URL, {
 
     var privacyHTML =
       "<h3>Privacy Policy</h3>" +
-      "<p>ViralGotIt collects only the information needed to process and deliver your order, such as your name, phone number and address.</p>" +
+      "<p>Eraflex collects only the information needed to process and deliver your order, such as your name, phone number and address.</p>" +
       "<p>We never sell your personal data to third parties. Information is used solely for order confirmation, delivery and customer support.</p>" +
       "<p>By placing an order on this site, you consent to this collection and use of your information.</p>";
 
@@ -516,7 +516,7 @@ fetch(WEB_APP_URL, {
       "<h3>Terms &amp; Conditions</h3>" +
       "<p>All orders are subject to availability. Prices displayed are inclusive of applicable taxes unless stated otherwise.</p>" +
       "<p>Cash on Delivery orders must be paid in full at the time of delivery. Replacement requests must be raised within 7 days of delivery.</p>" +
-      "<p>ViralGotIt reserves the right to cancel any order suspected of fraud or abuse of the replacement policy.</p>";
+      "<p>Eraflex reserves the right to cancel any order suspected of fraud or abuse of the replacement policy.</p>";
 
     function openModal(html) {
       content.innerHTML = html;
